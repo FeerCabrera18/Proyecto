@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(47, 70, 185, 0.802) 0%, rgba(166, 40, 65, 0.776) 100%);
+    animation: move 3s linear infinite;
+}
+
+@keyframes move {
+    50% {
+        background-position: 50%;
+    }
+}
+
+.container {
+    width: 400px;
+    height: min-content;
+    padding: 40px;
+    background: #ffffff;
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.form {
+    text-align: center;
+    margin-top: 30px;
+    padding: 1rem;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+    color: #000000;
+}
+
+.form input {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin: auto;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.form input[type="submit"],
+.btn {
+    cursor: pointer;
+    width: 100%;
+    height: 46px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 28px;
+    color: #000000;
+    background-color: #ffffff;
+    transition: background-color 0.2s ease-in, color 0.2s ease-in;
+}
+
+.form input[type="submit"]:hover,
+.btn:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.form input[type="submit"]:active,
+.btn:active {
+    color: #ffffff;
+    transition: none;
+}
+
+a {
+    text-decoration: none;
+}
