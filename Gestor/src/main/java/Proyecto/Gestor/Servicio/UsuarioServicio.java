@@ -27,6 +27,12 @@ public class UsuarioServicio {
         throw new ErrorCreacionUsuario("Error al guardar usuario!");
     }
 
+    // Método para obtener usuarios por id
+    public Usuario obtenerUsuario(Integer id){
+        Optional<Usuario> optionalUsuario = usuarioRepositorio.findById(id);
+        return optionalUsuario.orElse(null);
+    }
+
     // Método para iniciar sesión
     public UsuarioDTO iniciarSesion(String usuario, String contrasenia) {
         Optional<Usuario> optionalUsuario = usuarioRepositorio.findByUsuario(usuario);

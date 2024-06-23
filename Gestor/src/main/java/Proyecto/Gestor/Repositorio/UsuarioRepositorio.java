@@ -12,4 +12,6 @@ public interface UsuarioRepositorio extends JpaRepository<Usuario, Integer> {
     Optional<Usuario> findByUsuarioAndContrasenia(String usuario, String contrasenia);
 
     Optional<Usuario> findByUsuario(String usuario);
+
+    Optional<Usuario> findById(Integer id);
 }

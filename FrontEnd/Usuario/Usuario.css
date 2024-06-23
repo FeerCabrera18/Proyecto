@@ -1,0 +1,17 @@
+.navbar {
+    margin-bottom: 20px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #007bff;
+}
+
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}

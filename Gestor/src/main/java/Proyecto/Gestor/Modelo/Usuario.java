@@ -55,7 +55,7 @@ public class Usuario {
     private String gmail;
 
     // Formatter for converting between LocalDate and String
-    private static final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+    private static final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
     public Usuario(UsuarioDTO usuarioDTO) {
         this.usuario = usuarioDTO.getUsuario();
